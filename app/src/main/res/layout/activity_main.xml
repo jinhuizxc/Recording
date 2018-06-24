@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/iv_ly"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="doClick"
+        android:background="@drawable/bt_record_selector" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_lyzt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/iv_cancle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="doClick"
+            android:background="@drawable/bt_cancle_selector" />
+
+        <Button
+            android:id="@+id/iv_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="doClick"
+            android:background="@drawable/bt_save_selector" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_recordList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp" >
+    </ListView>
+
+</LinearLayout>
